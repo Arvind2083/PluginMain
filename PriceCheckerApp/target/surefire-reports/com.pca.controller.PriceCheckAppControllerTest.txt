@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.pca.controller.PriceCheckAppControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE! - in com.pca.controller.PriceCheckAppControllerTest
+testGetChannelDetails(com.pca.controller.PriceCheckAppControllerTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: Not yet implemented
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.pca.controller.PriceCheckAppControllerTest.testGetChannelDetails(PriceCheckAppControllerTest.java:11)
+
+testUploadPlugin(com.pca.controller.PriceCheckAppControllerTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Not yet implemented
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.pca.controller.PriceCheckAppControllerTest.testUploadPlugin(PriceCheckAppControllerTest.java:21)
+
+testShowAllPluginsDetails(com.pca.controller.PriceCheckAppControllerTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Not yet implemented
+	at org.junit.Assert.fail(Assert.java:88)
+	at com.pca.controller.PriceCheckAppControllerTest.testShowAllPluginsDetails(PriceCheckAppControllerTest.java:16)
+

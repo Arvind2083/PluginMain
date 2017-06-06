@@ -1,0 +1,65 @@
+<html ng-app="priceDetails">
+
+<head lang="en">
+<title>User Page</title>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script type="text/javascript">
+	var app = angular.module('priceDetails', []);
+	app.controller('userCtrl', function($scope, $http) {
+
+		$scope.getPrice = function() {
+			$http.get(
+					'http://localhost:8080/displayPrices?channelName='
+							+ $scope.channelName + '\u0026duration='
+							+ $scope.duration + '\u0026occurence='
+							+ $scope.occurence).then(function(response) {
+				$scope.channelDetail = response.data;
+
+			});
+		}
+	});
+</script>
+</head>
+
+<body ng-controller="userCtrl">
+
+	<form ng-submit="getPrice()">
+		<div align="left">
+			<h1>Welcome User !</h1>
+		</div>
+		<div>
+			<label> Channel Name: <input type="text" pattern="[a-zA-Z]+"  ng-model="channelName" id="channelName" ng-required="true" />
+			</label>
+		</div>
+		<div>
+			<label> &nbsp;</label>
+		</div>
+
+		<div>
+			<label>Duration: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="number" ng-model="duration" id="duration" ng-required="true" />
+			</label>
+		</div>
+		<div>
+			<label> &nbsp;</label>
+		</div>
+
+		<div>
+			<label>Occurence: &nbsp; &nbsp; &nbsp; <input type="number"	ng-model="occurence" id="occurence" ng-required="true" />
+			</label>
+		</div>
+		<div>
+			<label> &nbsp;</label>
+		</div>
+
+		<div>
+			<label> <input type="submit" value="ShowPrice" />
+			</label>
+		</div>
+	</form>
+	<div>
+		<h1>{{channelDetail.message}}</h1>
+	</div>
+</body>
+
+</html>

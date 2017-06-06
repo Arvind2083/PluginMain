@@ -1,0 +1,672 @@
+"2017-06-04 17:20:18 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 4580 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 17:20:18 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 17:20:18 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 17:20:21 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 17:20:21 CEST 2017]; root of context hierarchy
+""2017-06-04 17:20:23 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 17:20:23 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 17:20:23 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 17:20:27 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 17:20:27 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 17:20:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 17:20:27 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 17:20:28 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 17:20:28 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 17:20:28 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 17:20:28 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 17:20:28 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 17:20:28 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 17:20:29 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 17:20:29 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 17:20:30 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 17:20:31 [cluster-ClusterId{value='5934253dbc8b5911e45171cc', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+"com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:63)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:113)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mongodb.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:57)
+	at com.mongodb.connection.SocketStream.open(SocketStream.java:58)
+	... 3 common frames omitted
+"2017-06-04 17:20:32 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12861aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@18d9199, org.springframework.security.web.header.HeaderWriterFilter@1af1f93, org.springframework.security.web.authentication.logout.LogoutFilter@f1695a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d8c559, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ae7b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8662ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31cb64, org.springframework.security.web.session.SessionManagementFilter@8e96d9, org.springframework.security.web.access.ExceptionTranslationFilter@15160e6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2714a7]
+""2017-06-04 17:20:34 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 17:20:34 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 17:20:34 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 18.972 seconds (JVM running for 22.14)
+""2017-06-04 17:21:29 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 2076 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 17:21:29 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 17:21:29 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 17:21:30 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 17:21:30 CEST 2017]; root of context hierarchy
+""2017-06-04 17:21:31 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 17:21:31 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 17:21:31 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 17:21:33 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 17:21:33 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 17:21:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 17:21:33 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 17:21:33 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 17:21:33 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 17:21:33 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 17:21:33 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 17:21:33 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 17:21:33 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 17:21:34 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 17:21:34 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 17:21:34 [cluster-ClusterId{value='5934257ebc8b59081c15b5b2', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+""2017-06-04 17:21:34 [cluster-ClusterId{value='5934257ebc8b59081c15b5b2', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=1024197}
+""2017-06-04 17:21:34 [cluster-ClusterId{value='5934257ebc8b59081c15b5b2', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 17:21:35 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 17:21:36 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d82408, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cd68d4, org.springframework.security.web.header.HeaderWriterFilter@60819, org.springframework.security.web.authentication.logout.LogoutFilter@101f6af, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8e0dec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@216914, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1af1510, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e69ad8, org.springframework.security.web.session.SessionManagementFilter@184b4f4, org.springframework.security.web.access.ExceptionTranslationFilter@10d4d38, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@534b5b]
+""2017-06-04 17:21:37 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 17:21:37 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 17:21:37 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 8.528 seconds (JVM running for 9.845)
+""2017-06-04 17:21:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 17:22:12 [http-nio-8080-exec-2] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:22:12 [http-nio-8080-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:27017
+""2017-06-04 17:22:16 [http-nio-8080-exec-3] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:22:18 [http-nio-8080-exec-4] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:22:19 [http-nio-8080-exec-5] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:22:19 [http-nio-8080-exec-6] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:22:19 [http-nio-8080-exec-7] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:22:51 [http-nio-8080-exec-4] DEBUG o.s.data.mongodb.core.MongoTemplate - Saving DBObject containing fields: [_class, name]
+""2017-06-04 17:22:51 [http-nio-8080-exec-4] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:23:15 [http-nio-8080-exec-10] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:24:07 [http-nio-8080-exec-8] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameZeeDuration :100And Occurence :10
+""2017-06-04 17:35:11 [http-nio-8080-exec-2] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameZeeDuration :100And Occurence :10
+""2017-06-04 17:35:14 [http-nio-8080-exec-9] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameZeeDuration :100And Occurence :10
+""2017-06-04 17:35:31 [http-nio-8080-exec-4] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:35:32 [http-nio-8080-exec-8] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:35:33 [http-nio-8080-exec-10] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:35:34 [http-nio-8080-exec-2] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:35:34 [http-nio-8080-exec-9] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:35:34 [http-nio-8080-exec-1] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:35:38 [http-nio-8080-exec-4] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:35:38 [http-nio-8080-exec-5] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:35:52 [http-nio-8080-exec-4] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameZeeDuration :100And Occurence :100
+""2017-06-04 17:40:11 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 4464 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 17:40:11 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 17:40:11 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 17:40:13 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 17:40:13 CEST 2017]; root of context hierarchy
+""2017-06-04 17:40:14 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 17:40:14 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 17:40:14 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 17:40:17 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 17:40:17 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 17:40:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 17:40:17 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 17:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 17:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 17:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 17:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 17:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 17:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 17:40:19 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 17:40:19 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 17:40:19 [cluster-ClusterId{value='593429e3bc8b591170cd744e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+""2017-06-04 17:40:19 [cluster-ClusterId{value='593429e3bc8b591170cd744e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=1350819}
+""2017-06-04 17:40:19 [cluster-ClusterId{value='593429e3bc8b591170cd744e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 17:40:20 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 17:40:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bf1ba4, org.springframework.security.web.context.SecurityContextPersistenceFilter@f518a, org.springframework.security.web.header.HeaderWriterFilter@101f6af, org.springframework.security.web.authentication.logout.LogoutFilter@13fe06e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8a2a6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1da7ab0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18bfd6c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10bea4, org.springframework.security.web.session.SessionManagementFilter@cd6753, org.springframework.security.web.access.ExceptionTranslationFilter@8e96d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cf771]
+""2017-06-04 17:40:23 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 17:40:23 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 17:40:23 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 13.84 seconds (JVM running for 16.506)
+""2017-06-04 17:40:32 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 17:40:51 [http-nio-8080-exec-2] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:40:51 [http-nio-8080-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:5}] to localhost:27017
+""2017-06-04 17:40:51 [http-nio-8080-exec-4] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:41:04 [http-nio-8080-exec-3] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :666And Occurence :666
+""2017-06-04 17:41:04 [http-nio-8080-exec-3] INFO  c.p.c.PriceCheckAppController - FoxChannel doesn't exists. Please add the plugin
+""2017-06-04 17:41:36 [http-nio-8080-exec-4] DEBUG o.s.data.mongodb.core.MongoTemplate - Saving DBObject containing fields: [_class, name]
+""2017-06-04 17:41:36 [http-nio-8080-exec-4] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 17:42:28 [http-nio-8080-exec-1] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :199And Occurence :199
+""2017-06-04 17:42:36 [http-nio-8080-exec-3] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameSBSDuration :199And Occurence :199
+""2017-06-04 17:42:36 [http-nio-8080-exec-3] INFO  c.p.c.PriceCheckAppController - SBSChannel doesn't exists. Please add the plugin
+""2017-06-04 17:42:43 [http-nio-8080-exec-7] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFOXDuration :199And Occurence :199
+""2017-06-04 19:29:20 [main] INFO  c.p.c.PriceCheckAppControllerTest - Starting PriceCheckAppControllerTest on Arvind-PC with PID 1392 (started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 19:29:20 [main] DEBUG c.p.c.PriceCheckAppControllerTest - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 19:29:20 [main] INFO  c.p.c.PriceCheckAppControllerTest - No active profile set, falling back to default profiles: default
+""2017-06-04 19:29:24 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-06-04 19:29:24 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field channelService in com.pca.controller.PriceCheckAppController required a bean of type 'com.pca.service.ChannelService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.pca.service.ChannelService' in your configuration.
+
+""2017-06-04 19:29:24 [main] INFO  c.p.c.PriceCheckAppControllerTest - Starting PriceCheckAppControllerTest on Arvind-PC with PID 1392 (started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 19:29:24 [main] DEBUG c.p.c.PriceCheckAppControllerTest - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 19:29:24 [main] INFO  c.p.c.PriceCheckAppControllerTest - No active profile set, falling back to default profiles: default
+""2017-06-04 19:29:25 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-06-04 19:29:25 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field channelService in com.pca.controller.PriceCheckAppController required a bean of type 'com.pca.service.ChannelService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.pca.service.ChannelService' in your configuration.
+
+""2017-06-04 19:29:25 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6be2c3] to prepare test instance [com.pca.controller.PriceCheckAppControllerTest@19fcf7f]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) ~[spring-boot-test-autoconfigure-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'priceCheckAppController': Unsatisfied dependency expressed through field 'channelService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pca.service.ChannelService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pca.service.ChannelService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1486) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 42 common frames omitted
+"2017-06-04 20:23:13 [main] INFO  c.p.c.PriceCheckAppControllerTest - Starting PriceCheckAppControllerTest on Arvind-PC with PID 6136 (started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 20:23:13 [main] DEBUG c.p.c.PriceCheckAppControllerTest - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 20:23:13 [main] INFO  c.p.c.PriceCheckAppControllerTest - No active profile set, falling back to default profiles: default
+""2017-06-04 20:23:18 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-06-04 20:23:18 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field channelService in com.pca.controller.PriceCheckAppController required a bean of type 'com.pca.service.ChannelService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.pca.service.ChannelService' in your configuration.
+
+""2017-06-04 20:23:18 [main] INFO  c.p.c.PriceCheckAppControllerTest - Starting PriceCheckAppControllerTest on Arvind-PC with PID 6136 (started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 20:23:18 [main] DEBUG c.p.c.PriceCheckAppControllerTest - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 20:23:18 [main] INFO  c.p.c.PriceCheckAppControllerTest - No active profile set, falling back to default profiles: default
+""2017-06-04 20:23:18 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-06-04 20:23:19 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field channelService in com.pca.controller.PriceCheckAppController required a bean of type 'com.pca.service.ChannelService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.pca.service.ChannelService' in your configuration.
+
+""2017-06-04 20:23:19 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@34f934] to prepare test instance [com.pca.controller.PriceCheckAppControllerTest@1defd3f]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) ~[spring-boot-test-autoconfigure-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'priceCheckAppController': Unsatisfied dependency expressed through field 'channelService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pca.service.ChannelService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) ~[spring-context-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-1.5.3.RELEASE.jar:1.5.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pca.service.ChannelService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1486) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.8.RELEASE.jar:4.3.8.RELEASE]
+	... 42 common frames omitted
+"2017-06-04 21:08:27 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 5604 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 21:08:27 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 21:08:27 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 21:08:28 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 21:08:28 CEST 2017]; root of context hierarchy
+""2017-06-04 21:08:31 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 21:08:31 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 21:08:31 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 21:08:37 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 21:08:37 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 21:08:37 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 21:08:38 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 21:08:38 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 21:08:38 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 21:08:38 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 21:08:38 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 21:08:38 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 21:08:38 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 21:08:40 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 21:08:40 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 21:08:41 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 21:08:42 [cluster-ClusterId{value='59345ab8df085b15e4d56261', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:6}] to localhost:27017
+""2017-06-04 21:08:42 [cluster-ClusterId{value='59345ab8df085b15e4d56261', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=1362484}
+""2017-06-04 21:08:42 [cluster-ClusterId{value='59345ab8df085b15e4d56261', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 21:08:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@acbc60, org.springframework.security.web.context.SecurityContextPersistenceFilter@178aea6, org.springframework.security.web.header.HeaderWriterFilter@10a251b, org.springframework.security.web.authentication.logout.LogoutFilter@1b6097b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18280e6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1228e85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@456279, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b28ff1, org.springframework.security.web.session.SessionManagementFilter@10ede8b, org.springframework.security.web.access.ExceptionTranslationFilter@19bc830, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b40e3b]
+""2017-06-04 21:08:46 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 21:08:46 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 21:08:46 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 20.777 seconds (JVM running for 21.738)
+""2017-06-04 21:09:18 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 21:09:37 [http-nio-8080-exec-1] DEBUG o.s.data.mongodb.core.MongoDbUtils - Getting Mongo Database name=[plugins]
+""2017-06-04 21:09:37 [http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:7}] to localhost:27017
+""2017-06-04 21:09:55 [http-nio-8080-exec-5] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :199And Occurence :66
+""2017-06-04 21:09:57 [http-nio-8080-exec-7] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :199And Occurence :66
+""2017-06-04 21:10:07 [http-nio-8080-exec-10] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :199And Occurence :66
+""2017-06-04 21:10:07 [http-nio-8080-exec-1] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :199And Occurence :66
+""2017-06-04 21:10:07 [http-nio-8080-exec-2] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :199And Occurence :66
+""2017-06-04 21:10:08 [http-nio-8080-exec-4] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :199And Occurence :66
+""2017-06-04 21:11:55 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 5780 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 21:11:55 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 21:11:55 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 21:11:56 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 21:11:56 CEST 2017]; root of context hierarchy
+""2017-06-04 21:11:57 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 21:11:57 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 21:11:57 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 21:11:59 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 21:11:59 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 21:11:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 21:12:00 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 21:12:00 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 21:12:00 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 21:12:00 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 21:12:00 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 21:12:00 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 21:12:00 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 21:12:01 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 21:12:01 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 21:12:02 [cluster-ClusterId{value='59345b81df085b1694d77b9e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:8}] to localhost:27017
+""2017-06-04 21:12:02 [cluster-ClusterId{value='59345b81df085b1694d77b9e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=1056859}
+""2017-06-04 21:12:02 [cluster-ClusterId{value='59345b81df085b1694d77b9e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 21:12:02 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 21:12:03 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c13103, org.springframework.security.web.context.SecurityContextPersistenceFilter@1af1510, org.springframework.security.web.header.HeaderWriterFilter@1764bef, org.springframework.security.web.authentication.logout.LogoutFilter@ff5b7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1679798, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18d82e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cd6753, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f2098e, org.springframework.security.web.session.SessionManagementFilter@15160e6, org.springframework.security.web.access.ExceptionTranslationFilter@1cd68d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2efc59]
+""2017-06-04 21:12:04 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 21:12:04 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 21:12:04 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 10.098 seconds (JVM running for 10.946)
+""2017-06-04 21:12:08 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 21:12:23 [http-nio-8080-exec-7] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNamefoxDuration :888And Occurence :888
+""2017-06-04 21:12:25 [http-nio-8080-exec-8] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNamefoxDuration :888And Occurence :888
+""2017-06-04 21:12:29 [http-nio-8080-exec-10] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNamefoxDuration :888And Occurence :888
+""2017-06-04 21:14:00 [http-nio-8080-exec-2] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNamefoxDuration :888And Occurence :888
+""2017-06-04 21:14:44 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 1112 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 21:14:44 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 21:14:44 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 21:14:45 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 21:14:45 CEST 2017]; root of context hierarchy
+""2017-06-04 21:14:46 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 21:14:46 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 21:14:46 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 21:14:48 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 21:14:48 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 21:14:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 21:14:48 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 21:14:48 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 21:14:48 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 21:14:48 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 21:14:48 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 21:14:48 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 21:14:48 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 21:14:50 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 21:14:50 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 21:14:50 [cluster-ClusterId{value='59345c2adf085b0458d3ca51', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:9}] to localhost:27017
+""2017-06-04 21:14:50 [cluster-ClusterId{value='59345c2adf085b0458d3ca51', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=1192640}
+""2017-06-04 21:14:50 [cluster-ClusterId{value='59345c2adf085b0458d3ca51', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 21:14:50 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 21:14:52 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bf1ba4, org.springframework.security.web.context.SecurityContextPersistenceFilter@f518a, org.springframework.security.web.header.HeaderWriterFilter@101f6af, org.springframework.security.web.authentication.logout.LogoutFilter@13fe06e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8a2a6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1da7ab0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18bfd6c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10bea4, org.springframework.security.web.session.SessionManagementFilter@cd6753, org.springframework.security.web.access.ExceptionTranslationFilter@8e96d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cf771]
+""2017-06-04 21:14:53 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 21:14:53 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 21:14:53 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 9.948 seconds (JVM running for 10.747)
+""2017-06-04 21:14:59 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 21:15:12 [http-nio-8080-exec-5] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNamefoxDuration :77And Occurence :77
+""2017-06-04 21:15:13 [http-nio-8080-exec-7] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNamefoxDuration :77And Occurence :77
+""2017-06-04 21:15:33 [http-nio-8080-exec-1] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNamefoxxDuration :77And Occurence :77
+""2017-06-04 21:15:33 [http-nio-8080-exec-1] INFO  c.p.c.PriceCheckAppController - foxxChannel doesn't exists. Please add the plugin
+""2017-06-04 21:18:28 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 5128 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 21:18:28 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 21:18:28 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 21:18:29 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 21:18:29 CEST 2017]; root of context hierarchy
+""2017-06-04 21:18:30 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 21:18:30 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 21:18:30 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 21:18:31 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 21:18:31 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 21:18:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 21:18:31 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 21:18:32 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 21:18:32 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 21:18:32 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 21:18:32 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 21:18:32 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 21:18:32 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 21:18:33 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 21:18:33 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 21:18:33 [cluster-ClusterId{value='59345d09df085b14081b8413', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:10}] to localhost:27017
+""2017-06-04 21:18:33 [cluster-ClusterId{value='59345d09df085b14081b8413', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=1038661}
+""2017-06-04 21:18:33 [cluster-ClusterId{value='59345d09df085b14081b8413', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 21:18:33 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 21:18:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31cb64, org.springframework.security.web.context.SecurityContextPersistenceFilter@101f6af, org.springframework.security.web.header.HeaderWriterFilter@18d82e9, org.springframework.security.web.authentication.logout.LogoutFilter@860997, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c13103, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cd6753, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ff5b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1962194, org.springframework.security.web.session.SessionManagementFilter@1901c4d, org.springframework.security.web.access.ExceptionTranslationFilter@adc9f6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1650aa6]
+""2017-06-04 21:18:35 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 21:18:35 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 21:18:35 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 7.835 seconds (JVM running for 8.635)
+""2017-06-04 21:18:40 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 21:18:55 [http-nio-8080-exec-9] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :100And Occurence :200
+""2017-06-04 21:21:18 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 6828 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 21:21:18 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 21:21:18 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 21:21:18 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 21:21:18 CEST 2017]; root of context hierarchy
+""2017-06-04 21:21:19 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 21:21:19 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 21:21:19 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 21:21:21 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 21:21:21 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 21:21:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 21:21:22 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 21:21:22 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 21:21:22 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 21:21:22 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 21:21:22 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 21:21:22 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 21:21:22 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 21:21:23 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 21:21:23 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 21:21:23 [cluster-ClusterId{value='59345db3df085b1aacf62e49', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11}] to localhost:27017
+""2017-06-04 21:21:23 [cluster-ClusterId{value='59345db3df085b1aacf62e49', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=13071450}
+""2017-06-04 21:21:23 [cluster-ClusterId{value='59345db3df085b1aacf62e49', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 21:21:24 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 21:21:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bf1ba4, org.springframework.security.web.context.SecurityContextPersistenceFilter@f518a, org.springframework.security.web.header.HeaderWriterFilter@101f6af, org.springframework.security.web.authentication.logout.LogoutFilter@13fe06e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8a2a6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1da7ab0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18bfd6c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10bea4, org.springframework.security.web.session.SessionManagementFilter@cd6753, org.springframework.security.web.access.ExceptionTranslationFilter@8e96d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cf771]
+""2017-06-04 21:21:27 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 21:21:27 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 21:21:27 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 10.533 seconds (JVM running for 11.385)
+""2017-06-04 21:21:30 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 21:21:42 [http-nio-8080-exec-3] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :1888And Occurence :188
+""2017-06-04 21:22:54 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 5792 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 21:22:54 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 21:22:54 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 21:22:55 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 21:22:55 CEST 2017]; root of context hierarchy
+""2017-06-04 21:22:56 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 21:22:56 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 21:22:56 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 21:22:57 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 21:22:57 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 21:22:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 21:22:57 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 21:22:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 21:22:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 21:22:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 21:22:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 21:22:58 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 21:22:58 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 21:22:59 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 21:22:59 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 21:22:59 [cluster-ClusterId{value='59345e13df085b16a0206ae6', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:12}] to localhost:27017
+""2017-06-04 21:22:59 [cluster-ClusterId{value='59345e13df085b16a0206ae6', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=1331222}
+""2017-06-04 21:22:59 [cluster-ClusterId{value='59345e13df085b16a0206ae6', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 21:22:59 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 21:23:01 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d8c559, org.springframework.security.web.context.SecurityContextPersistenceFilter@103c6ff, org.springframework.security.web.header.HeaderWriterFilter@1a30587, org.springframework.security.web.authentication.logout.LogoutFilter@8662ac, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e69ad8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1af1f93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ae7b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c13103, org.springframework.security.web.session.SessionManagementFilter@33dafd, org.springframework.security.web.access.ExceptionTranslationFilter@1411512, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f19647]
+""2017-06-04 21:23:03 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 21:23:03 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 21:23:03 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 9.977 seconds (JVM running for 10.808)
+""2017-06-04 21:23:04 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 21:23:17 [http-nio-8080-exec-7] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :199And Occurence :199
+""2017-06-04 21:23:43 [http-nio-8080-exec-9] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxeDuration :199And Occurence :199
+""2017-06-04 21:23:43 [http-nio-8080-exec-9] INFO  c.p.c.PriceCheckAppController - FoxeChannel doesn't exists. Please add the plugin
+""2017-06-04 21:25:41 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 7524 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 21:25:41 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 21:25:41 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 21:25:42 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9e725a: startup date [Sun Jun 04 21:25:42 CEST 2017]; root of context hierarchy
+""2017-06-04 21:25:43 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 21:25:43 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 21:25:43 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 21:25:45 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 21:25:45 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 21:25:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 21:25:45 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 21:25:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 21:25:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 21:25:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 21:25:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 21:25:45 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 21:25:45 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 21:25:46 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 21:25:46 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 21:25:47 [cluster-ClusterId{value='59345ebadf085b1d64cafbfb', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+""2017-06-04 21:25:47 [cluster-ClusterId{value='59345ebadf085b1d64cafbfb', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=1376482}
+""2017-06-04 21:25:47 [cluster-ClusterId{value='59345ebadf085b1d64cafbfb', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 21:25:47 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 21:25:48 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8a2a6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@8cd36b, org.springframework.security.web.header.HeaderWriterFilter@1af1510, org.springframework.security.web.authentication.logout.LogoutFilter@18bfd6c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1af3b44, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@101f6af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1da7ab0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12861aa, org.springframework.security.web.session.SessionManagementFilter@18d82e9, org.springframework.security.web.access.ExceptionTranslationFilter@33dafd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@389761]
+""2017-06-04 21:25:50 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 21:25:50 [main] ERROR o.a.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+"java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.pca.PriceCheckerApplication.main(PriceCheckerApplication.java:25)
+"2017-06-04 21:25:50 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8080]]
+"org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.pca.PriceCheckerApplication.main(PriceCheckerApplication.java:25)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	... 14 common frames omitted
+"2017-06-04 21:25:50 [main] INFO  o.a.catalina.core.StandardService - Stopping service Tomcat
+""2017-06-04 21:25:50 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-06-04 21:25:50 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+""2017-06-04 21:25:50 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9e725a: startup date [Sun Jun 04 21:25:42 CEST 2017]; root of context hierarchy
+""2017-06-04 21:25:50 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-06-04 21:26:04 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 4340 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 21:26:04 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 21:26:04 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 21:26:05 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 21:26:05 CEST 2017]; root of context hierarchy
+""2017-06-04 21:26:06 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 21:26:06 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 21:26:06 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 21:26:07 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 21:26:07 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 21:26:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 21:26:08 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 21:26:08 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 21:26:08 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 21:26:08 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 21:26:08 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 21:26:08 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 21:26:08 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 21:26:09 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 21:26:09 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 21:26:09 [cluster-ClusterId{value='59345ed1df085b10f41d1f55', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+""2017-06-04 21:26:09 [cluster-ClusterId{value='59345ed1df085b10f41d1f55', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=1037261}
+""2017-06-04 21:26:09 [cluster-ClusterId{value='59345ed1df085b10f41d1f55', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 21:26:10 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 21:26:10 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bf1ba4, org.springframework.security.web.context.SecurityContextPersistenceFilter@f518a, org.springframework.security.web.header.HeaderWriterFilter@101f6af, org.springframework.security.web.authentication.logout.LogoutFilter@13fe06e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8a2a6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1da7ab0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18bfd6c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10bea4, org.springframework.security.web.session.SessionManagementFilter@cd6753, org.springframework.security.web.access.ExceptionTranslationFilter@8e96d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cf771]
+""2017-06-04 21:26:12 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 21:26:12 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 21:26:12 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 8.49 seconds (JVM running for 9.131)
+""2017-06-04 21:26:12 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 21:26:24 [http-nio-8080-exec-5] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :777And Occurence :777
+""2017-06-04 21:28:02 [main] INFO  com.pca.PriceCheckerApplication - Starting PriceCheckerApplication on Arvind-PC with PID 4868 (E:\spring_wk\PriceCheckerApp\target\classes started by Arvind in E:\spring_wk\PriceCheckerApp)
+""2017-06-04 21:28:02 [main] DEBUG com.pca.PriceCheckerApplication - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+""2017-06-04 21:28:02 [main] INFO  com.pca.PriceCheckerApplication - No active profile set, falling back to default profiles: default
+""2017-06-04 21:28:03 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6044d7: startup date [Sun Jun 04 21:28:03 CEST 2017]; root of context hierarchy
+""2017-06-04 21:28:04 [main] DEBUG o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [E:\spring_wk\PriceCheckerApp\target\classes\com\pca\dao\ServiceDao.class]
+""2017-06-04 21:28:04 [main] DEBUG o.s.d.r.c.RepositoryBeanDefinitionBuilder - Registering custom repository implementation: serviceDaoImpl com.pca.dao.impl.ServiceDaoImpl
+""2017-06-04 21:28:04 [main] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Spring Data MongoDB - Registering repository: serviceDao - Interface: com.pca.dao.ServiceDao - Factory: org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean
+""2017-06-04 21:28:05 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 21:28:05 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 21:28:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 21:28:06 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 21:28:06 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 21:28:06 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 21:28:06 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 21:28:06 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 21:28:06 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 21:28:06 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 21:28:07 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+""2017-06-04 21:28:07 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+""2017-06-04 21:28:07 [cluster-ClusterId{value='59345f47df085b13046195dd', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:15}] to localhost:27017
+""2017-06-04 21:28:07 [cluster-ClusterId{value='59345f47df085b13046195dd', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, maxDocumentSize=16777216, roundTripTimeNanos=1321423}
+""2017-06-04 21:28:07 [cluster-ClusterId{value='59345f47df085b13046195dd', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+""2017-06-04 21:28:08 [main] DEBUG o.s.d.m.c.i.MongoPersistentEntityIndexCreator - Analyzing class class org.pca.domain.Plugin for index information.
+""2017-06-04 21:28:09 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12861aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@18d9199, org.springframework.security.web.header.HeaderWriterFilter@1af1f93, org.springframework.security.web.authentication.logout.LogoutFilter@f1695a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d8c559, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ae7b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8662ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31cb64, org.springframework.security.web.session.SessionManagementFilter@8e96d9, org.springframework.security.web.access.ExceptionTranslationFilter@15160e6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2714a7]
+""2017-06-04 21:28:11 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 21:28:11 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 21:28:11 [main] INFO  com.pca.PriceCheckerApplication - Started PriceCheckerApplication in 9.819 seconds (JVM running for 11.227)
+""2017-06-04 21:28:11 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 21:28:25 [http-nio-8080-exec-10] INFO  c.p.c.PriceCheckAppController - Search Price with details forchannelNameFoxDuration :777And Occurence :88
+"

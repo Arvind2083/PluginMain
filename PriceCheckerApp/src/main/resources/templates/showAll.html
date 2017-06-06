@@ -1,0 +1,34 @@
+<html ng-app="showAllPlugins">
+
+<head lang="en">
+<title>Show All Page</title>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script type="text/javascript">
+	var app = angular.module('showAllPlugins', []);
+	app.controller('showAllCtrl', function($scope, $http) {
+
+		$scope.availablePlugins = function() {
+			$http.get('http://localhost:8080/displayPluginDetails').then(
+					function(response) {
+						$scope.channelDetail = response.data;
+					});
+		}
+	});
+</script>
+</head>
+
+<body ng-controller="showAllCtrl">
+	<div align="left">
+		<h1>Welcome User !</h1>
+	</div>
+	<form ng-submit="availablePlugins()">
+		<h1 ng-repeat="channelRecords in channelDetail">Plugin name :
+			{{channelRecords.name}}</h1>
+		<h1>
+			Click to see the available Plugins : <input type="submit" value="Check" />
+		</h1>
+	</form>
+</body>
+
+</html>
